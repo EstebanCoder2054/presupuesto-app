@@ -31,7 +31,7 @@ function App() {
       //UNA VEZ QUE SE AGREGA UN GASTO, SE DEBE PONER CREARGASTO COMO FALSE PARA QUE NO SE VUELVA A EJECUTAR
       setCrearGasto(false);
     }
-  }, [crearGasto])
+  }, [crearGasto, gastos, gasto, restante])
   
 
   return (

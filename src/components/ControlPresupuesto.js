@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import {revisarPresupuesto} from '../helpers';
 
 function ControlPresupuesto({presupuesto, restante}){
     return(
@@ -8,7 +9,7 @@ function ControlPresupuesto({presupuesto, restante}){
             </div>
             
             {/* el classname será algo dinámico, porque podrá ir cambiando */}
-            <div className="">
+            <div className={revisarPresupuesto(presupuesto, restante)}>
                 Restante: ${restante}
             </div>
         </Fragment>
